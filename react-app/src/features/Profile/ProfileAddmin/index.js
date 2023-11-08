@@ -91,6 +91,7 @@ const ProfileAdmin = ({
         setShownoti={setShownoti}
         setCompares={setCompares}
         setShowListChat={setShowListChat}
+        setShowChat={setShowChat}
       />
 
       <CardAdmin />

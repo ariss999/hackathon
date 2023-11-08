@@ -65,6 +65,7 @@ const Compare = ({
         setShownoti={setShownoti}
         setCompares={setCompares}
         setShowListChat={setShowListChat}
+        setShowChat={setShowChat}
       />
       <div className="title-header">
         {compares.length > 0 ? (

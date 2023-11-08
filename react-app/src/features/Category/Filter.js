@@ -65,7 +65,8 @@ const Filter = ({
       });
 
       const filteredData = [...new Set(newCompanies)];
-      setNewCompanys((prevNewCompanys) => [...prevNewCompanys, ...filteredData]);
+      const filterPack = filteredData.sort((a, b) => b.pack - a.pack);
+      setNewCompanys((prevNewCompanys) => [...prevNewCompanys, ...filterPack]);
     }
   
     getCompanies();
@@ -85,6 +86,7 @@ const Filter = ({
         setShownoti={setShownoti}
         setCompares={setCompares}
         setShowListChat={setShowListChat}
+        setShowChat={setShowChat}
       />
 
       {showNoti == "show" ? (

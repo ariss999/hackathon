@@ -68,6 +68,7 @@ const EditProfileUser = ({
         setShownoti={setShownoti}
         setCompares={setCompares}
         setShowListChat={setShowListChat}
+        setShowChat={setShowChat}
       />
 
       <CardNewData

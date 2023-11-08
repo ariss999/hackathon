@@ -123,6 +123,7 @@ const Category = ({
         setShowListChat={setShowListChat}
         search={search}
         setSearch={setSearch}
+        setShowChat={setShowChat}
       />
 
       <div className="title-header">

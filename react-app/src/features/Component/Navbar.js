@@ -7,6 +7,7 @@ const Navbar = ({
   setShownoti,
   setCompares,
   setShowListChat,
+  setShowChat,
   className,
 }) => {
   const noti = require("../../image Hackathon/icon/notification.png");
@@ -20,6 +21,7 @@ const Navbar = ({
     setCompares([]);
     setShowListChat("");
     navigate("/");
+    setShowChat('')
     
   }
 

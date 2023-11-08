@@ -61,6 +61,7 @@ const ProfileFactoryEdit = ({
         setShownoti={setShownoti}
         setCompares={setCompares}
         setShowListChat={setShowListChat}
+        setShowChat={setShowChat}
       />
 
       <CardNewData

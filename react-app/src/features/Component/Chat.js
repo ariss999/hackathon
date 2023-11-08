@@ -45,10 +45,8 @@ const Chat = ({
       if (file.size <= 70 * 1024) {
         // Check file size (70KB)
         const reader = new FileReader();
-
         reader.onload = async function (e) {
           const imagePath = e.target.result;
-
           const messageData = {
             room: room,
             sendId: user.id,
@@ -83,20 +81,9 @@ const Chat = ({
     }
   }
 
-  async function sendMessageBot() {
-    try {
+  async function bot(){
 
-      const messageDataUser = {
-        room: room,
-        sendId: user.id,
-        message: currentMessage,
-      };
-      await axios.post(`${url}/chats`, messageDataUser);
-      setMessageList((list) => [...list, messageDataUser]);
-      let updatedChat = [...chat, messageDataUser];
-      setChat(updatedChat);
-      setCurrentMessage("");
-
+    try{
 
       const response = await fetch(`${url}/completions`, {
         method: "POST",
@@ -116,13 +103,34 @@ const Chat = ({
         message: data.choices[0].message.content,
       };
       await axios.post(`${url}/chats`, messageDataBot);
-      setMessageList((list) => [...list, messageDataBot]);
-      let updatedChatbot = [...chat, messageDataBot];
-      setChat(updatedChatbot);
       
+      setMessageList((list) => [...list, messageDataBot]);
+      setChat((list) => [...list, messageDataBot]);
+
+    }catch(error){
+      console.error(error);
+    }
+
+  }
+
+  async function sendMessageBot() {
+    try {
+      const messageDataUser = {
+        room: room,
+        sendId: user.id,
+        message: currentMessage,
+      };
+      await axios.post(`${url}/chats`, messageDataUser);
+
+      setMessageList((list) => [...list, messageDataUser]);
+      setChat((list) => [...list, messageDataUser]);
+      setCurrentMessage("")
+
+      bot();
+
 
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
   }
 

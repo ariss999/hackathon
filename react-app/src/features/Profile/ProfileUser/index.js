@@ -91,6 +91,7 @@ const ProfileUser = ({
         setShownoti={setShownoti}
         setCompares={setCompares}
         setShowListChat={setShowListChat}
+        setShowChat={setShowChat}
       />
       <CardEdit user={user} information={information} />
 

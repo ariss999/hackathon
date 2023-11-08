@@ -11,6 +11,7 @@ const NavbarAdmin = ({
   setShowListChat,
   search,
   setSearch,
+  setShowChat,
   className,
 }) => {
   const noti = require("../../image Hackathon/icon/notification.png");
@@ -23,6 +24,7 @@ const NavbarAdmin = ({
     setUser("");
     setCompares([]);
     setShowListChat("");
+    setShowChat('');
     navigate("/");
   }
 
@@ -69,11 +71,7 @@ const NavbarAdmin = ({
       <div className="navbar">
         <div className="category">
           <Link to="/">หน้าหลัก</Link>
-          {/* 
-          <Link to="/all/regis">ลงทะเบียนไม่ผ่าน</Link>
-          <Link to="/all/package">ซื้อแพคเก็จไม่ผ่าน</Link>
-          <Link to="/all/company">ผู้ประกอบการ</Link>
-          <Link to="/all/user">ผู้ใช้งาน</Link> */}
+          
           <select
             value={selectedOption}
             onChange={handleSelectChange}

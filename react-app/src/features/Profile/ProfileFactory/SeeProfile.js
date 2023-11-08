@@ -78,6 +78,7 @@ const SeeProfile = ({
         setShownoti={setShownoti}
         setCompares={setCompares}
         setShowListChat={setShowListChat}
+        setShowChat={setShowChat}
       />
 
       <CardCompany url={url} client={user} id={id} userId={user.id} user={company} information={information} setShowListChat={setShowListChat} setShowChat={setShowChat} setListChat={setListChat} listChat={listChat} setRoom={setRoom} />

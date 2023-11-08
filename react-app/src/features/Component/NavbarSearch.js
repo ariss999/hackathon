@@ -9,6 +9,7 @@ const NavbarSearch = ({
   setShowListChat,
   search,
   setSearch,
+  setShowChat,
   className,
 }) => {
   const noti = require("../../image Hackathon/icon/notification.png");
@@ -22,6 +23,7 @@ const NavbarSearch = ({
     setCompares([]);
     setShowListChat("");
     navigate("/");
+    setShowChat('');
   }
 
   function showNoti() {
