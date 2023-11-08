@@ -36,7 +36,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // อนุญาตเฉพาะต้นทางนี้เท่านั้น
+    origin: "*", // อนุญาตเฉพาะต้นทางนี้เท่านั้น
     methods: ["PUT", "DELETE", "POST"], // อนุญาตให้ใช้วิธี DELETE
   })
 );
@@ -53,7 +53,7 @@ app.use((req, res, next) => {
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // อนุญาตเฉพาะต้นทางนี้เท่านั้น
+    origin: "*", // อนุญาตเฉพาะต้นทางนี้เท่านั้น
     methods: ["PUT", "POST"],
   },
 });
