@@ -368,7 +368,7 @@ const RegisterCompany = ({ companies, setUser, url }) => {
         await axios.post(`${url}/listChats`, {
           userId: response.data.id,
           companyId: 0,
-          room: Number(`0${response.data.id}`),
+          room: response.data.id,
         });
         ///////////////////////////////////////////////////////////////////////////
 

@@ -19,6 +19,7 @@ const Chat = ({
   const chatImg = require("../../image Hackathon/icon/bubble-chat.png");
   const file = require("../../image Hackathon/icon/attach-file.png");
   const send = require("../../image Hackathon/icon/send 2.png");
+  const roomString = Number.toString();
 
   const [currentMessage, setCurrentMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
@@ -239,7 +240,7 @@ const Chat = ({
               onChange={handleFileChange}
             />
 
-            {room == 0 ? (
+            {room == user.id ? (
               <>
                 <img src={send} onClick={sendMessageBot} />
               </>
