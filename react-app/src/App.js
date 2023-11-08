@@ -39,10 +39,10 @@ import Compare from "./features/Compare/index";
 import { Routes, Route } from "react-router-dom";
 import SeeProfile from "./features/Profile/ProfileFactory/SeeProfile";
 import CheckPay from "./features/Admin/CheckPay";
-const socket = io.connect("http://localhost:3002");
+const socket = io.connect("https://stylepathpro-cdnt.onrender.com");
 
 function App() {
-  const url = `http://localhost:3002`;
+  const url = `https://stylepathpro-cdnt.onrender.com`;
   const [user, setUser] = useState("");
   const [companies, setCompanies] = useState([]);
   const [favs, setFavs] = useState([]);
@@ -144,7 +144,7 @@ function App() {
 
   return (
     <>
-      {companies.length >= 0 ? (
+      {companies.length > 0 ? (
         <>
           <Routes>
             <Route
