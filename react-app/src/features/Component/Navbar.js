@@ -129,13 +129,26 @@ export default styled(Navbar)`
   }
 
   .navbar a {
-    margin: 35px;
+    margin: 25px;
     font-size: 23px;
     font-weight: 500;
     text-decoration: none;
     color: black;
     font-family: "Anuphan";
   }
+
+  @media only screen and (max-width: 1200px) {
+    .navbar a {
+      margin: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .navbar a {
+      margin: 5px;
+    }
+  }
+  
   .navbar {
     display: flex;
     justify-content: space-evenly;

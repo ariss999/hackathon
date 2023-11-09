@@ -131,13 +131,14 @@ export default styled(NavbarSearch)`
 @import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@200;300;400;500&family=Lora:wght@400;500;600;700&family=Pangolin&family=Prompt:wght@200;500;700&display=swap");
   
   .navbar a {
-    margin: 30px;
+    margin: 25px;
     font-size: 23px;
     font-weight: 500;
     text-decoration: none;
     color:white;
     font-family: "Anuphan";
   }
+
   .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -145,6 +146,26 @@ export default styled(NavbarSearch)`
     margin: 30px;
     background-image: linear-gradient(to bottom right, #12136e, #6b78ff);
   }
+
+  @media only screen and (max-width: 1400px) {
+    .navbar a {
+      margin: 20px;
+      
+    }
+    .navbar {
+      margin: 30px 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .navbar a {
+      margin: 5px;
+    }
+    .navbar {
+      margin: 30px 20px;
+    }
+  }
+  
   .search {
     width: 250px;
     height: 30px;

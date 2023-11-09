@@ -58,10 +58,8 @@ const Chat = ({
             await socket.emit("send_message", messageData);
             await axios.post(`${url}/chats`, messageData);
 
-            let updatedMessageList = [...messageList, messageData];
-            let updatedChat = [...chat, messageData];
-            setMessageList(updatedMessageList);
-            setChat(updatedChat);
+            setMessageList((list) => [...list, messageData]);
+            setChat((list) => [...list, messageData]);
           } catch (error) {
             // Handle errors from socket.emit or axios.post
             console.error("Error:", error);
@@ -82,10 +80,8 @@ const Chat = ({
     }
   }
 
-  async function bot(){
-
-    try{
-
+  async function bot() {
+    try {
       const response = await fetch(`${url}/completions`, {
         method: "POST",
         headers: {
@@ -104,14 +100,12 @@ const Chat = ({
         message: data.choices[0].message.content,
       };
       await axios.post(`${url}/chats`, messageDataBot);
-      
+
       setMessageList((list) => [...list, messageDataBot]);
       setChat((list) => [...list, messageDataBot]);
-
-    }catch(error){
+    } catch (error) {
       console.error(error);
     }
-
   }
 
   async function sendMessageBot() {
@@ -125,11 +119,9 @@ const Chat = ({
 
       setMessageList((list) => [...list, messageDataUser]);
       setChat((list) => [...list, messageDataUser]);
-      setCurrentMessage("")
+      setCurrentMessage("");
 
       bot();
-
-
     } catch (error) {
       console.error(error);
     }
@@ -156,10 +148,8 @@ const Chat = ({
       await socket.emit("send_message", messageData);
       await axios.post(`${url}/chats`, messageData);
       // setMessageList((list) => [...list, messageData]);
-      let updatedMessageList = [...messageList, messageData];
-      let updatedChat = [...chat, messageData];
-      setMessageList(updatedMessageList);
-      setChat(updatedChat);
+      setMessageList((list) => [...list, messageData]);
+      setChat((list) => [...list, messageData]);
       setCurrentMessage("");
     }
   };
