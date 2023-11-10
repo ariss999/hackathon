@@ -39,10 +39,10 @@ import Compare from "./features/Compare/index";
 import { Routes, Route } from "react-router-dom";
 import SeeProfile from "./features/Profile/ProfileFactory/SeeProfile";
 import CheckPay from "./features/Admin/CheckPay";
-const socket = io.connect("https://stylepathpro-cdnt.onrender.com");
+const socket = io.connect("https://last-q3ud.onrender.com");
 
 function App() {
-  const url = `https://stylepathpro-cdnt.onrender.com`;
+  const url = `https://last-q3ud.onrender.com`;
   const [user, setUser] = useState("");
   const [companies, setCompanies] = useState([]);
   const [favs, setFavs] = useState([]);
