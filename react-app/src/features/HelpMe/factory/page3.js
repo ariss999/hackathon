@@ -33,15 +33,15 @@ const HelpmeFactorythree = ({ className }) => {
                                 <h2>สินค้าของคุณมีลักษณะเป็นแบบใด</h2>
                             </div>
                             <div className="groupButton1">
-                                <button className="selectlong"> <span>ทางโรงงานมีเนื้อผ้าที่เหมาะสมให้เลือก (รับทำเฉพาะผ้าที่มีในโรงงานเท่านั้น)</span> </button>
+                                <button className="selectlong"> <span>ทางสายผลิตมีเนื้อผ้าที่เหมาะสมให้เลือก (รับทำเฉพาะผ้าที่มีในสายผลิตเท่านั้น)</span> </button>
                                 
                             </div>
                             <div className="groupButton1">
-                                <button className="selectlong"> <span>ทางโรงงานมีเนื้อผ้าที่เหมาะสมให้เลือก (สามารถนำผ้ามาทำกับโรงงานได้)</span></button>
+                                <button className="selectlong"> <span>ทางสายผลิตมีเนื้อผ้าที่เหมาะสมให้เลือก (สามารถนำผ้ามาทำกับสายผลิตได้)</span></button>
 
                             </div>
                             <div className="groupButton1">
-                                <button className="select"> <span>ต้องนำผ้ามาให้โรงงานเท่านั้น</span> </button>
+                                <button className="select"> <span>ต้องนำผ้ามาให้สายผลิตเท่านั้น</span> </button>
                             </div>
                            
                             <div className="groupButton2">

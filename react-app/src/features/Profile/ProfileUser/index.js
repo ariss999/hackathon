@@ -101,7 +101,7 @@ const ProfileUser = ({
         {factory.length > 0 ? (
           <>
             <div className="box-category">
-              <div className="name-category">โรงงาน</div>
+              <div className="name-category">สายผลิต</div>
               <div className="collect">
                 {factory.map((company) =>
                   company.type == "company" ? (

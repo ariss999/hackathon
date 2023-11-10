@@ -498,7 +498,7 @@ const RegisterCompany = ({ companies, setUser, url }) => {
                     }}
                   >
                     <option value="ofrabic shop">ร้านขายผ้า</option>
-                    <option value="company">โรงงาน</option>
+                    <option value="company">สายผลิต</option>
                     <option value="designer">ผู้ออกแบบ</option>
                   </select>
                 </StyledSelect>

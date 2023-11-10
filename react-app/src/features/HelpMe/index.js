@@ -114,9 +114,9 @@ const HelpMe = ({ className }) => {
                             <p>เรทราคา : {sliderValue}</p>
 
                             <div className="groupButton1">
-                                <button className="selectlong"> <span>ทางโรงงานมีเนื้อผ้าที่เหมาะสมให้เลือก (รับทำเฉพาะผ้าที่มีในโรงงานเท่านั้น)</span> </button>
-                                <button className="selectlong"> <span>ทางโรงงานมีเนื้อผ้าที่เหมาะสมให้เลือก (สามารถนำผ้ามาทำกับโรงงานได้)</span> </button>
-                                <button className="selectlong"> <span>ต้องนำผ้ามาให้โรงงานเท่านั้น</span> </button>
+                                <button className="selectlong"> <span>ทางสายผลิตมีเนื้อผ้าที่เหมาะสมให้เลือก (รับทำเฉพาะผ้าที่มีในสายผลิตเท่านั้น)</span> </button>
+                                <button className="selectlong"> <span>ทางสายผลิตมีเนื้อผ้าที่เหมาะสมให้เลือก (สามารถนำผ้ามาทำกับสายผลิตได้)</span> </button>
+                                <button className="selectlong"> <span>ต้องนำผ้ามาให้สายผลิตเท่านั้น</span> </button>
                                 <button className="select"> <span>กระโปรง</span> </button>
                                 <button className="select"> <span>เสื้อ</span> </button>
                                 <button className="select"><span>ชุดเซ็ต</span> </button>

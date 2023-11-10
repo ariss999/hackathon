@@ -50,7 +50,7 @@ const NavbarSearch = ({
           <Link to="/">หน้าหลัก</Link>
           <Link to="/fabric">ร้านขายผ้า</Link>
           <Link to="/designer">ดีไซน์เนอร์</Link>
-          <Link to="/company">โรงงาน</Link>
+          <Link to="/company">สายผลิต</Link>
         </div>
         <div className="search">
           <input

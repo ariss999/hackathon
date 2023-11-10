@@ -70,7 +70,7 @@ const Compare = ({
       <div className="title-header">
         {compares.length > 0 ? (
           compares[0].type == "company" ? (
-            <h1>เปรียบเทียบ โรงงาน</h1>
+            <h1>เปรียบเทียบ สายผลิต</h1>
           ) : compares[0].type == "frabic shop" ? (
             <h1>เปรียบเทียบ ร้านขายผ้า</h1>
           ) : (

@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   const { name,description,profile,address,tel,facebook,email,instagram,website,image1,image2,image3,image4,image5,image6 } = req.body;
   const newUser = await Information.create({
-    name:"xxxxx",description:"xxxxx",profile,address:"xxxxx",tel:"xxxxx",facebook:"xxxxx",email:"xxxxx",instagram:"xxxxx",website:"xxxxx",image1,image2,image3,image4,image5,image6});
+    name:"ผู้ใช้งาน",description:"-",profile,address:"-",tel:"-",facebook:"-",email:"-",instagram:"-",website:"-",image1,image2,image3,image4,image5,image6});
   res.json(newUser);
 });
 

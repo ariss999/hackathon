@@ -32,7 +32,7 @@ const HelpmeFactoryTwo = ({  filterProduct, setFilterProduct, className }) => {
   
      <div className="formHolder">
        <div className="formHeader">
-         <p>โรงงาน (Factory)</p>
+         <p>สายผลิต (Factory)</p>
          <h3>จำนวนสินค้า</h3>
          <h3>เลือกจำนวนสินค้าที่คุณต้องการ</h3>
        </div>

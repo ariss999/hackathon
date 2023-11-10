@@ -135,7 +135,7 @@ const HomePage = ({
         {/* Factory */}
         <div id="factory">
           <div className="header-category">
-            <p>โรงงาน</p>
+            <p>สายผลิต</p>
           </div>
           <div className="detail">
             <p>รับผลิตและจัดจำหน่ายสินค้าประเภทเสื้อผ้า</p>
